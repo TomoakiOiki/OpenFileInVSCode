@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Open in VSCode Options</title>
+</head>
+
+<body>
+    <h1>Options</h1>
+    <form id="options-form">
+        <label for="enabled">Enabled:</label>
+        <input type="checkbox" id="enabled" name="enabled" checked>
+        <br>
+        <label for="base-path">Base Path:</label>
+        <input type="text" id="base-path" name="base-path" style="width: 50%;" placeholder="/Users/user.name/src/github.com">
+        <br>
+        <span style="font-weight: bold; color: red;">The organization and repository name are retrieved from the browser, so you need to include the path before that.</span>
+        <br><br>
+        <input type="submit" value="Save">
+    </form>
+    <script src="options.js"></script>
+</body>
+
+</html>

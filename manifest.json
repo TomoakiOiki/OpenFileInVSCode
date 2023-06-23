@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Open in VSCode",
+  "description": "This extension adds a button to open files in VSCode from GitHub PR's Files Changed tab.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["src/content.js"]
+    }
+  ],
+  "permissions": ["tabs", "storage"],
+  "options_page": "src/options.html"
+}
